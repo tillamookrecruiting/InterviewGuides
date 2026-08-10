@@ -402,7 +402,8 @@
       <h2>Interview Guides</h2>
       <p><strong>Select an interview guide:</strong></p>
       <ul style="margin: 1rem 0 1rem 2rem; line-height: 2;">
-        <li><a href="#" target="_blank" style="color: var(--blue); font-weight: 600;">Interview Guide</a></li>
+        <li><a href="https://youtube.com" target="_blank" style="color: var(--blue); font-weight: 600;">Interview Guide</a></li>
+        <li><a href="https://google.com" target="_blank" style="color: var(--blue); font-weight: 600;">Interview Guide 2</a></li>
       </ul>
 
       <div class="score-guide">
@@ -521,6 +522,22 @@
             </div>
           </div>
         </div>
+        <div class="question-item">
+          <div class="question-row">
+            <label class="question-label">
+              <input type="checkbox" name="selected_questions" value="q_4"  onchange="toggleRating(this, 'rating_4')">
+              <span>Test Question 1</span>
+            </label>
+            <div class="question-rating" id="rating_4" style="display:none">
+              <span class="rating-label">Score:</span>
+              <label class="rating-option"><input type="radio" name="q_4_rating" value="5">5</label>
+              <label class="rating-option"><input type="radio" name="q_4_rating" value="4">4</label>
+              <label class="rating-option"><input type="radio" name="q_4_rating" value="3">3</label>
+              <label class="rating-option"><input type="radio" name="q_4_rating" value="2">2</label>
+              <label class="rating-option"><input type="radio" name="q_4_rating" value="1">1</label>
+            </div>
+          </div>
+        </div>
 
       <div class="selection-count" id="compCount" style="margin-top: 1rem;">0 questions selected</div>
       <div class="section-score" style="margin: 1.5rem 0; padding: 1rem; background: #f0f4ff; border-radius: 10px; border: 2px solid var(--blue);">
@@ -547,32 +564,32 @@
         <div class="question-item">
           <div class="question-row">
             <label class="question-label">
-              <input type="checkbox" name="selected_questions" value="q_4" checked onchange="toggleRating(this, 'rating_4')">
+              <input type="checkbox" name="selected_questions" value="q_5" checked onchange="toggleRating(this, 'rating_5')">
               <span>Which of our Shared Values resonates most with you and why?</span>
             </label>
-            <div class="question-rating" id="rating_4" style="display:flex">
-              <span class="rating-label">Score:</span>
-              <label class="rating-option"><input type="radio" name="q_4_rating" value="5">5</label>
-              <label class="rating-option"><input type="radio" name="q_4_rating" value="4">4</label>
-              <label class="rating-option"><input type="radio" name="q_4_rating" value="3">3</label>
-              <label class="rating-option"><input type="radio" name="q_4_rating" value="2">2</label>
-              <label class="rating-option"><input type="radio" name="q_4_rating" value="1">1</label>
-            </div>
-          </div>
-        </div>
-        <div class="question-item">
-          <div class="question-row">
-            <label class="question-label">
-              <input type="checkbox" name="selected_questions" value="q_5"  onchange="toggleRating(this, 'rating_5')">
-              <span>Tell me about a time you demonstrated one of our core values at work.</span>
-            </label>
-            <div class="question-rating" id="rating_5" style="display:none">
+            <div class="question-rating" id="rating_5" style="display:flex">
               <span class="rating-label">Score:</span>
               <label class="rating-option"><input type="radio" name="q_5_rating" value="5">5</label>
               <label class="rating-option"><input type="radio" name="q_5_rating" value="4">4</label>
               <label class="rating-option"><input type="radio" name="q_5_rating" value="3">3</label>
               <label class="rating-option"><input type="radio" name="q_5_rating" value="2">2</label>
               <label class="rating-option"><input type="radio" name="q_5_rating" value="1">1</label>
+            </div>
+          </div>
+        </div>
+        <div class="question-item">
+          <div class="question-row">
+            <label class="question-label">
+              <input type="checkbox" name="selected_questions" value="q_6"  onchange="toggleRating(this, 'rating_6')">
+              <span>Tell me about a time you demonstrated one of our core values at work.</span>
+            </label>
+            <div class="question-rating" id="rating_6" style="display:none">
+              <span class="rating-label">Score:</span>
+              <label class="rating-option"><input type="radio" name="q_6_rating" value="5">5</label>
+              <label class="rating-option"><input type="radio" name="q_6_rating" value="4">4</label>
+              <label class="rating-option"><input type="radio" name="q_6_rating" value="3">3</label>
+              <label class="rating-option"><input type="radio" name="q_6_rating" value="2">2</label>
+              <label class="rating-option"><input type="radio" name="q_6_rating" value="1">1</label>
             </div>
           </div>
         </div>
@@ -668,7 +685,7 @@
 </div>
 
 <script>
-  const allQuestions = [{"category": "Skill Based", "text": "How does your experience relate to this position?", "default": true}, {"category": "Skill Based", "text": "Walk me through a complex project you completed.", "default": false}, {"category": "Competency", "text": "Describe a time you had to make a difficult decision quickly.", "default": true}, {"category": "Competency", "text": "Tell me about a challenge you faced and how you resolved it.", "default": false}, {"category": "Shared Values", "text": "Which of our Shared Values resonates most with you and why?", "default": true}, {"category": "Shared Values", "text": "Tell me about a time you demonstrated one of our core values at work.", "default": false}];
+  const allQuestions = [{"category": "Skill Based", "text": "How does your experience relate to this position?", "default": true}, {"category": "Skill Based", "text": "Walk me through a complex project you completed.", "default": false}, {"category": "Competency", "text": "Describe a time you had to make a difficult decision quickly.", "default": true}, {"category": "Competency", "text": "Tell me about a challenge you faced and how you resolved it.", "default": false}, {"category": "Competency", "text": "Test Question 1", "default": false}, {"category": "Shared Values", "text": "Which of our Shared Values resonates most with you and why?", "default": true}, {"category": "Shared Values", "text": "Tell me about a time you demonstrated one of our core values at work.", "default": false}];
   const surveyName = "Test1";
   const POWER_AUTOMATE_URL = 'https://defaultd7a24e4807da410e982786fbeed880.f9.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/b35041ad013749b3afab15eb7eda4a02/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=PERCnOrQUh8nPY6d2U5fVoLR_WAowD9AeJ2dJQCS-Rc';
   const params = new URLSearchParams(location.search);
@@ -810,7 +827,7 @@
   
   function selectDefaults() {
     // Store which questions were default
-    const defaults = [true, false, true, false, true, false];
+    const defaults = [true, false, true, false, false, true, false];
     document.querySelectorAll('input[name="selected_questions"]').forEach((cb, index) => {
       cb.checked = defaults[index] || false;
     });
